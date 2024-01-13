@@ -1,0 +1,3 @@
+const n=prompt("Enter the String");
+const a=n.split(" ");
+console.log(a);

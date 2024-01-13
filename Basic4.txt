@@ -1,0 +1,6 @@
+const n=prompt("Enter the number");
+const s=n.toString();
+var d="";
+for(let i=s.length-1;i>=0;i--)
+ d=d+s.charAt(i);
+console.log(d);

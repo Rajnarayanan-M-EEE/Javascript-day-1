@@ -1,0 +1,33 @@
+const a=prompt("Enter the String");
+const n=a.length;
+const b=Math.pow(2,n);
+const s=[];
+for(let i=1;i<b;i++)
+{
+    const t=i.toString(2);
+    s[i-1]=t;
+}
+for(let i=0;i<s.length;i++)
+{
+    let f="";
+    if(s[i].length<n)
+    {
+        var v=n-s[i].length;
+        for(let j=0;j<v;j++)
+            f=f+"0";
+        s[i]=f+s[i];
+    }
+}
+const x=[];
+for(let i=0;i<s.length;i++)
+{
+    var d=s[i];
+    var g="";
+    for(let j=0;j<d.length;j++)
+    {
+        if(d.charAt(j)=='1')
+        g=g+a.charAt(j);
+    }
+    x[i]=g;
+}
+    console.log(x);

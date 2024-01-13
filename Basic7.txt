@@ -1,0 +1,46 @@
+const n=prompt("Enter the money");
+const a=[25,10,5,2,1];
+var b=[];
+let k=0;
+var le=n;
+while(le>0)
+{
+le=coin(le,a,k);
+k++;
+}
+console.log(b);
+function coin(n,a,k)
+{
+    if(n==0)
+    return 0;
+    else if(n>=a[0])
+    {
+        left=n-a[0];
+         b[k]=a[0];
+        return left;
+    }
+    else if(n>=a[1])
+    {
+        left=n-a[1];
+         b[k]=a[1];
+        return left;
+    }
+    else if(n>=a[2])
+    {
+        left=n-a[2];
+          b[k]=a[2];
+        return left;
+    }
+    else if(n>=a[3])
+    {
+        left=n-a[3];
+          b[k]=a[3];
+        return left;
+    }
+    else if(n>=a[4])
+    {
+        left=n-a[4];
+         b[k]=a[4];
+        return left;
+    }
+}

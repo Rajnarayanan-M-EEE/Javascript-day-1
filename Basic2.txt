@@ -1,0 +1,22 @@
+const a=[];
+const b=[];
+var g=0;
+const n=prompt("Enter the total number");
+for(let i=0;i<n;i++)
+{
+    const v=prompt("Enter the values");
+    a[i]=v;
+}
+const z=prompt("Enter the destination");
+for(let i=z;i<n;i++){
+b[g]=a[i];
+g=g+1;
+}
+for(let i=0;i<z;i++)
+{
+    b[g]=a[i];
+    g++;
+}
+
+for(let i=0;i<n;i++)
+console.log(b[i]);

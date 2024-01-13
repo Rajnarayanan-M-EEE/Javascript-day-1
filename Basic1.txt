@@ -1,0 +1,21 @@
+let str="silent";
+let st="lisent";
+let c=0;
+if(str.length==st.length)
+{
+    Array1 = str.split("");
+    Array2 = st.split("");
+    Array1.sort();
+     Array2.sort();
+     for(let i=0;i<str.length;i++)
+     {
+         if(Array1[i]==Array2[i])
+         c++;
+     }
+   if(c==str.length)
+   console.log("Anagram");
+   else
+   console.log("Not");
+}
+else
+console.log("Not");
